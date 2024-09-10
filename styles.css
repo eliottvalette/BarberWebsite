@@ -102,18 +102,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.subtitle {
-    font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
-    font-size: 1.5rem; /* Slightly larger font for emphasis */
-    color: rgba(255, 255, 255, 0.85); /* Soft white for a more subtle effect */
-    letter-spacing: 0.05rem; /* Small letter spacing for better readability */
-    margin-top: 1rem;
-    text-transform: uppercase; /* Optional: Can make it all uppercase for a more structured look */
-    opacity: 0.9; /* Slight transparency for a lighter effect */
-    font-weight: 300; /* Light font-weight for a softer look */
-}
-
-
 /* Hero Section with Video Background */
 #hero {
     position: relative;
@@ -393,11 +381,16 @@ footer {
     }
 
     .nav-links li {
+        padding: 1rem;
         opacity: 0;
     }
 
     .burger {
         display: block;
+    }
+
+    .nav-links a{
+        color: var(--text-color);
     }
 
     .specialty {
