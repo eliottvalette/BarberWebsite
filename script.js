@@ -4,6 +4,27 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollPosition = window.pageYOffset;
         heroVideo.style.transform = `translateY(${scrollPosition * 0.4}px)`;
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var video = document.getElementById('hero-video');
+    
+        video.addEventListener('error', function() {
+            console.log('Video failed to load, displaying fallback image.');
+            video.style.display = 'none'; // Hide the video element
+            document.body.style.backgroundImage = "url('fallback.png')"; // Show the fallback image
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+        });
+    
+        // If autoplay is blocked (especially on mobile devices), show the fallback image
+        video.addEventListener('play', function() {
+            if (!video.paused && !video.muted) {
+                video.muted = true; // Ensure the video remains muted for autoplay
+                video.play();
+            }
+        });
+    });
+    
     
 
     // Existing code for navigation menu toggle and smooth scrolling
