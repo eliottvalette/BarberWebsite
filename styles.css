@@ -1,0 +1,521 @@
+:root {
+    --primary-color: #8b0000;
+    --darker-primary-color : #490000;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1, h2, .title {
+    font-family: 'ChunkFive', serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* Remove shadow */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+    transition: background-color 0.3s ease; /* Smooth transition when scrolling */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-container {
+    width: 60px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white); /* White color for the links to contrast with the transparent background */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #6b0000;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    color: rgba(255, 255, 255, 0.85); /* Soft white for a more subtle effect */
+    letter-spacing: 0.05rem; /* Small letter spacing for better readability */
+    margin-top: 1rem;
+    text-transform: uppercase; /* Optional: Can make it all uppercase for a more structured look */
+    opacity: 0.9; /* Slight transparency for a lighter effect */
+    font-weight: 300; /* Light font-weight for a softer look */
+}
+
+
+/* Hero Section with Video Background */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+}
+
+#hero-video {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    filter: hue-rotate(225deg) brightness(0.5) contrast(1.6); /* Fine-tune the effect */
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* About sections */ 
+#about {
+    position: relative; /* Allows us to overlap it with the hero section */
+    margin-top: -150px; /* Adjust this to overlap the hero section */
+    margin-bottom: 100px
+}
+
+.about-content {
+    position: absolute;
+    top: 50%; /* Adjust to position it vertically */
+    left: 0; /* Stick it to the left side of the screen */
+    width: 60%; /* Control the width of the box */
+    padding: 2rem;
+    background-color: var(--white); /* White background for contrast */
+    border-radius: 1px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    transform: translateY(-15%); /* Vertically centers the box */
+    z-index: 10; /* Ensures it overlaps the hero section */
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--primary-color); /* Add your primary color for the heading */
+}
+
+#about p {
+    font-size: 1rem;
+    color: var(--text-color); /* Standard text color */
+    line-height: 1.6;
+}
+
+/* Sections below */
+section {
+    padding: 5rem 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #6b0000;
+}
+
+/* Adjusting Services Section */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Add spacing between service items */
+}
+
+.service-item {
+    flex: 1 1 30%; /* Each item takes up 30% of the row */
+    min-width: 250px; /* Ensures the items don't shrink too much */
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+    border: 2px solid var(--primary-color);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    border: 2px solid var(--darker-primary-color);
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.discount, .extra-info {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+/* Specialties */
+#specialties {
+    background-color: var(--secondary-color); /* Light background to differentiate the section */
+    padding: 2rem 0;
+    position: relative;
+}
+
+#specialties h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary-color); /* Primary color for the heading */
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.specialties-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between specialties */
+    flex-wrap: wrap; /* Ensures specialties stack on smaller screens */
+}
+
+.specialty {
+    background-color: var(--white); /* White background for contrast */
+    padding: 2rem;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent; /* Add a subtle border */
+}
+
+.specialty:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    border: 2px solid var(--primary-color); /* Change border color on hover */
+}
+
+.specialty i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.specialty h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--darker-primary-color);
+}
+
+.specialty p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+
+/* Hours */
+#hours ul {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#hours ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Aligns left and right sections */
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex-basis: 45%; /* Each section takes up about 45% of the container */
+    margin-bottom: 2rem;
+}
+
+.footer-section.left {
+    text-align: left; /* Aligns text to the left for the left section */
+}
+
+.footer-section.right {
+    text-align: right; /* Aligns text to the right for the right section */
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .specialty {
+        flex-basis: 100%;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+
+    #hero {
+        background-attachment: scroll; /* Disable fixed background for smaller screens */
+    }
+
+    .service-item {
+        flex: 1 1 45%; /* Two services per row on smaller screens */
+    }
+
+    .about-content {
+        position: relative;
+        left: 50%; /* Center it on smaller screens */
+        transform: translate(-50%, 0); /* Center it horizontally */
+        margin-top: 2rem; /* Space it from the top */
+        width: 90%; /* Make it wider on smaller screens */
+    }
+
+    .specialties-container {
+        flex-direction: column; /* Stack specialties vertically */
+        align-items: center;
+    }
+
+    .specialty {
+        width: 90%; /* Make the cards wider on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%; /* One service per row on mobile screens */
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.discount-section {
+    position: relative;
+    padding: 7rem 2rem 6rem 2rem;
+    color: var(--white); /* White text for contrast */
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem auto;
+    background-image: url('barber.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background for the parallax effect */
+    z-index: 1;
+    overflow: hidden; /* Ensure ::before stays within the section bounds */
+}
+
+.discount-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 0;
+}
+
+.discount-section p {
+    margin-bottom: 1rem; /* Spacing between paragraphs */
+    z-index: 2; /* Ensure text is above the background */
+    position: relative;
+}
+
+.discount-section span {
+    font-weight: bold;
+    color: var(--secondary-color); /* Different color for the "10% off" text */
+    z-index: 2;
+}
+
+.beer-info {
+    font-size: 1.1rem; /* Slightly larger text */
+    color: var(--text-color); /* Uses the default text color */
+    background-color: var(--secondary-color); /* Light background to make it stand out */
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Adds a subtle border */
+    max-width: 600px;
+    margin: 1.5rem auto;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Adds a light shadow for some depth */
+    font-style: italic; /* Makes the text slightly different by italicizing */
+}
