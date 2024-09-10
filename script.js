@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         heroVideo.style.transform = `translateY(${scrollPosition * 0.4}px)`;
     });
 
-    video.addEventListener('error', function() {
+    heroVideo.addEventListener('error', function() {
         heroVideo.innerHTML=''
         console.log('Video failed to load, displaying fallback image.');
         video.style.display = 'none'; // Hide the video element
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', () => {
-        // Toggle nav
+        // Toggle navigation
         nav.classList.toggle('nav-active');
 
-        // Animate links
+        // Animate the links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -59,10 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth', // This ensures smooth scroll
+                block: 'start' // Scroll to the top of the section
             });
         });
     });
+
 
     // Add fade-in animation for sections
     const sections = document.querySelectorAll('section');
