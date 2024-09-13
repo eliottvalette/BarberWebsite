@@ -20,13 +20,12 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--secondary-color);
+    background-color: var(--white);
 }
 
 h1, h2, .title {
     font-family: 'ChunkFive', serif;
 }
-
 
 .container {
     max-width: 1200px;
@@ -34,15 +33,14 @@ h1, h2, .title {
     padding: 0 2rem;
 }
 
-/* Header */
 header {
-    background-color: transparent; /* Transparent background */
-    box-shadow: none; /* Remove shadow */
+    background-color: transparent;
+    box-shadow: none;
     position: fixed;
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
-    transition: background-color 0.3s ease; /* Smooth transition when scrolling */
+    transition: background-color 0.3s ease;
 }
 
 nav {
@@ -72,7 +70,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--white); /* White color for the links to contrast with the transparent background */
+    color: var(--white);
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -106,7 +104,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Hero Section with Video Background */
 #hero {
     position: relative;
     height: 100vh;
@@ -126,16 +123,14 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; 
-    filter: hue-rotate(225deg) brightness(0.5) contrast(1.6); /* Fine-tune the effect */
+    z-index: -1;
+    filter: hue-rotate(225deg) brightness(0.5) contrast(1.6);
 }
-
 
 .hero-content {
     position: relative;
     z-index: 1;
 }
-
 
 #hero h1 {
     font-size: 4rem;
@@ -147,39 +142,40 @@ nav {
     margin-bottom: 2rem;
 }
 
-/* About sections */ 
 #about {
-    position: relative; /* Allows us to overlap it with the hero section */
-    margin-top: -150px; /* Adjust this to overlap the hero section */
-    margin-bottom: 100px
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: 100px;
+    background-color: transparent; /* Make the entire section background transparent */
+    padding: 0; /* Remove padding to eliminate any white space */
 }
+
 
 .about-content {
     position: absolute;
-    top: 50%; /* Adjust to position it vertically */
-    left: 0; /* Stick it to the left side of the screen */
-    width: 60%; /* Control the width of the box */
+    top: 50%;
+    left: 0;
+    width: 60%;
     padding: 2rem;
-    background-color: var(--white); /* White background for contrast */
-    border-radius: 1px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
-    transform: translateY(-15%); /* Vertically centers the box */
-    z-index: 10; /* Ensures it overlaps the hero section */
+    background-color: var(--white);
+    border-radius: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-15%);
+    z-index: 10;
 }
 
 #about h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: var(--primary-color); /* Add your primary color for the heading */
+    color: var(--primary-color);
 }
 
 #about p {
     font-size: 1rem;
-    color: var(--text-color); /* Standard text color */
+    color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Sections below */
 section {
     padding: 5rem 0;
 }
@@ -205,17 +201,16 @@ h2 {
     background-color: #6b0000;
 }
 
-/* Adjusting Services Section */
 .service-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    gap: 2rem; /* Add spacing between service items */
+    justify-content: center;
+    gap: 2rem;
 }
 
 .service-item {
-    flex: 1 1 30%; /* Each item takes up 30% of the row */
-    min-width: 250px; /* Ensures the items don't shrink too much */
+    flex: 1 1 30%;
+    min-width: 250px;
     background-color: var(--white);
     padding: 2rem;
     border-radius: 5px;
@@ -247,9 +242,8 @@ h2 {
     font-weight: bold;
 }
 
-/* Specialties */
 #specialties {
-    background-color: var(--secondary-color); /* Light background to differentiate the section */
+    background-color: var(--secondary-color);
     padding: 2rem 0;
     position: relative;
 }
@@ -257,7 +251,7 @@ h2 {
 #specialties h2 {
     font-size: 2.5rem;
     text-align: center;
-    color: var(--primary-color); /* Primary color for the heading */
+    color: var(--primary-color);
     margin-bottom: 3rem;
     position: relative;
 }
@@ -265,27 +259,27 @@ h2 {
 .specialties-container {
     display: flex;
     justify-content: center;
-    gap: 3rem; /* Space between specialties */
-    flex-wrap: wrap; /* Ensures specialties stack on smaller screens */
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .specialty {
-    background-color: var(--white); /* White background for contrast */
+    background-color: var(--white);
     padding: 2rem;
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 300px;
     text-align: center;
     position: relative;
     z-index: 1;
-    border: 2px solid transparent; /* Add a subtle border */
+    border: 2px solid transparent;
 }
 
 .specialty:hover {
-    transform: translateY(-10px); /* Lift the card slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
-    border: 2px solid var(--primary-color); /* Change border color on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color);
 }
 
 .specialty i {
@@ -305,8 +299,6 @@ h2 {
     color: var(--text-color);
 }
 
-
-/* Hours */
 #hours ul {
     list-style: none;
     max-width: 400px;
@@ -322,7 +314,6 @@ h2 {
     border-radius: 5px;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -331,22 +322,22 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Aligns left and right sections */
-    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .footer-section {
-    flex-basis: 45%; /* Each section takes up about 45% of the container */
+    flex-basis: 45%;
     margin-bottom: 2rem;
 }
 
 .footer-section.left {
-    text-align: left; /* Aligns text to the left for the left section */
+    text-align: left;
 }
 
 .footer-section.right {
-    text-align: right; /* Aligns text to the right for the right section */
+    text-align: right;
 }
 
 .social-icons a {
@@ -367,8 +358,117 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#presentation {
+    background-color: var(--secondary-color);
+    padding: 8rem 0rem 4rem 0rem;
+}
 
-/* Responsive Design */
+#presentation p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+#presentation ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+#presentation ul li {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+#presentation ul li strong {
+    color: var(--primary-color);
+}
+
+#approach {
+    padding: 4rem 0;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+#approach p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+#approach h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#history {
+    padding: 4rem 0;
+    background-color: whitesmoke;
+    color: var(--text-color);
+}
+
+#history p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+#history h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#values {
+    background-color: var(--white);
+    padding: 4rem 0;
+}
+
+.value-container {
+    background-color: var(--white);
+}
+
+#values .values-container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#values .value-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--white);
+}
+
+#values .value-item:hover {
+    transform: translateY(-5px);
+    border: 2px solid var(--primary-color);
+}
+
+#values .value-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#values .value-item p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    #values .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -402,34 +502,34 @@ footer {
     }
 
     #hero {
-        background-attachment: scroll; /* Disable fixed background for smaller screens */
+        background-attachment: scroll;
     }
 
     .service-item {
-        flex: 1 1 45%; /* Two services per row on smaller screens */
+        flex: 1 1 45%;
     }
 
     .about-content {
         position: relative;
-        left: 50%; /* Center it on smaller screens */
-        transform: translate(-50%, 0); /* Center it horizontally */
-        margin-top: 2rem; /* Space it from the top */
-        width: 90%; /* Make it wider on smaller screens */
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 2rem;
+        width: 90%;
     }
 
     .specialties-container {
-        flex-direction: column; /* Stack specialties vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .specialty {
-        width: 90%; /* Make the cards wider on smaller screens */
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .service-item {
-        flex: 1 1 100%; /* One service per row on mobile screens */
+        flex: 1 1 100%;
     }
 }
 
@@ -460,20 +560,19 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
 .discount-section {
     position: relative;
     padding: 7rem 2rem 6rem 2rem;
-    color: var(--white); /* White text for contrast */
+    color: var(--white);
     text-align: center;
     font-weight: bold;
     margin: 2rem auto;
-    background-image: url('barber.jpg'); /* Background image */
+    background-image: url('barber.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Fixed background for the parallax effect */
+    background-attachment: fixed;
     z-index: 1;
-    overflow: hidden; /* Ensure ::before stays within the section bounds */
+    overflow: hidden;
 }
 
 .discount-section::before {
@@ -483,32 +582,32 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 
 .discount-section p {
-    margin-bottom: 1rem; /* Spacing between paragraphs */
-    z-index: 2; /* Ensure text is above the background */
+    margin-bottom: 1rem;
+    z-index: 2;
     position: relative;
 }
 
 .discount-section span {
     font-weight: bold;
-    color: var(--secondary-color); /* Different color for the "10% off" text */
+    color: var(--secondary-color);
     z-index: 2;
 }
 
 .beer-info {
-    font-size: 1.1rem; /* Slightly larger text */
-    color: var(--text-color); /* Uses the default text color */
-    background-color: var(--secondary-color); /* Light background to make it stand out */
+    font-size: 1.1rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
     padding: 0.8rem;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Adds a subtle border */
+    border: 1px solid rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 1.5rem auto;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Adds a light shadow for some depth */
-    font-style: italic; /* Makes the text slightly different by italicizing */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-style: italic;
 }

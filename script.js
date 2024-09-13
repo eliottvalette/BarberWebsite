@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-
     // Add fade-in animation for sections
     const sections = document.querySelectorAll('section');
     const fadeInOptions = {
