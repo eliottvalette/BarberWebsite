@@ -3,130 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullsnips Barbershop - Cairns, Australia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/chunkfive" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Bullsnips Barbershop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo-container">
-                <img src="./logo.png" alt="Bullsnips Barbershop Logo" class="logo">
+            <div class="logo">
+                <img src="logo.png" alt="Bullsnips Barbershop Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#specialties">Specialties</a></li>
                 <li><a href="#hours">Hours</a></li>
-                <li><a href="tel:+61740516344" class="contact-btn">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <a href="#booking" class="book-now-btn">Book Now</a>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <video autoplay muted loop playsinline poster="fallback.png" id="hero-video">
-                <source src="background_no_white.webm" type="video/webm">
-                <source src="background_no_white.mp4" type="video/mp4">
+        <section id="home">
+            <video autoplay muted loop id="bg-video">
+                <source src="background-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>            
+            </video>
             <div class="hero-content">
-                <h1>BULLSNIPS</h1>
-                <p class="subtitle">Premium Barbershop in Cairns</p>
-                <a href="#services" class="cta-btn">Our Services</a>
+                <p class="welcome-text">Welcome To Bullsnips</p>
+                <h1>Best Barbershop For A Professional Look</h1>
+                <p class="hero-description">Bullsnips offers high performance customized haircuts to provide you with visible results.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="cta-button">Book Now</a>
+                    <a href="#services" class="secondary-button">All Services</a>
+                </div>
             </div>
         </section>
-        
-        
-        
 
         <section id="about">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>Welcome to Bullsnips Barbershop, Cairns' premier destination for men’s grooming. Established in 1995, we have quickly become a cornerstone of the community, offering top-quality haircuts, shaves, and grooming services for men who value craftsmanship and attention to detail. Our mission is simple: to provide our clients with not just a haircut, but an experience that leaves them feeling fresh, confident, and rejuvenated.</p>
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to Bullsnips Barbershop, Cairns' premier destination for men's grooming. Established in 1995, we have quickly become a cornerstone of the community, offering top-quality haircuts, shaves, and grooming services.</p>
+                        <p>Our mission is simple: to provide our clients with not just a haircut, but an experience that leaves them feeling fresh, confident, and rejuvenated.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="barbershop-interior.jpg" alt="Bullsnips Barbershop Interior">
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-cut"></i>
+                        <h3>Expert Stylists</h3>
+                        <p>Our team of skilled barbers is dedicated to perfection.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-beer"></i>
+                        <h3>Relaxing Atmosphere</h3>
+                        <p>Enjoy a complimentary beer while you wait.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>Convenient Hours</h3>
+                        <p>Open late on Thursdays and Fridays for your convenience.</p>
+                    </div>
+                </div>
             </div>
-        </section>        
+        </section>
 
         <section id="services">
             <div class="container">
                 <h2>Our Services</h2>
                 <div class="service-container">
                     <div class="service-item">
-                        <i class="fi fi-ss-barber-shop"></i>
                         <h3>Haircut</h3>
                         <p>$38</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-user"></i>
                         <h3>Buzz & Crew Cut</h3>
                         <p>$27 - $32</p>
                     </div>
                     <div class="service-item">
-                        <i class="fi fi-br-child-head"></i>
                         <h3>Kids</h3>
                         <p>$25 - $30</p>
                     </div>
                     <div class="service-item">
-                        <i class="fi fi-ss-sparkles"></i>
                         <h3>Fade</h3>
                         <p>$45 - $60</p>
                     </div>
                     <div class="service-item">
-                        <i class="fi fi-ss-razor-barber"></i>
                         <h3>Beard</h3>
                         <p>$22 - $30</p>
                     </div>
                     <div class="service-item">
-                        <i class="fi fi-ss-hair-clipper"></i>
-                        <h3>Shaves</h3>
-                        <p>$45 - $50</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-user-tie"></i>
                         <h3>Pensioner</h3>
                         <p>$32</p>
                     </div>
-                </div>               
+                </div>
             </div>
-        </section>    
-        <section class="discount-section">
-            <p><span>10% off</span> for veterans, military, Navy, cops, firefighters, and paramedics with card presentation.</p>
-            <p>All treatments include a hot towel with essential oils.</p>
-        </section>     
+        </section>
 
         <section id="specialties">
             <div class="container">
                 <h2>Our Specialties</h2>
                 <div class="specialties-container">
                     <div class="specialty">
-                        <i class="fi fi-ss-razor-barber"></i>
                         <h3>Traditional Shaving</h3>
                         <p>Experience our signature traditional shaving service.</p>
                     </div>
                     <div class="specialty">
-                        <i class="fas fa-cut"></i>
                         <h3>Skin Fades</h3>
                         <p>Perfect skin fades tailored to your style.</p>
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
 
         <section id="hours">
             <div class="container">
                 <h2>Opening Hours</h2>
-                <ul>
+                <ul class="hours-list">
                     <li><span>Monday</span><span>8:30AM - 5PM</span></li>
                     <li><span>Tuesday</span><span>8:30AM - 5PM</span></li>
                     <li><span>Wednesday</span><span>8:30AM - 5PM</span></li>
@@ -135,7 +133,7 @@
                     <li><span>Saturday</span><span>8AM - 12:30PM</span></li>
                     <li><span>Sunday</span><span>Closed</span></li>
                 </ul>
-                <p class="beer-info">Enjoy a complimentary beer or whiskey after 3PM on Thursdays and Fridays!</p>
+                <p class="special-offer">Enjoy a complimentary beer or whiskey after 3PM on Thursdays and Fridays!</p>
             </div>
         </section>
     </main>
@@ -145,24 +143,23 @@
             <div class="footer-content">
                 <div class="footer-section left">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-phone"></i> +61 7 4051 6344</p>
-                    <p><i class="fas fa-envelope"></i> info@bullsnips.com.au</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 3/156-158 Aumuller St, Bungalow QLD 4870</p>
+                    <p>+61 7 4051 6344</p>
+                    <p>info@bullsnips.com.au</p>
+                    <p>3/156-158 Aumuller St, Bungalow QLD 4870</p>
                 </div>
                 <div class="footer-section right">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
                     </div>
                 </div>
             </div>
-            <p class="copyright">&copy; 2024 Bullsnips Barbershop. All rights reserved.</p>
+            <p class="copyright">© 2024 Bullsnips Barbershop. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<!-- Last Update 1:16 09/11 -->
