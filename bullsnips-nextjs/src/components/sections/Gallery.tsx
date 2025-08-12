@@ -31,10 +31,10 @@ const Gallery = () => {
         {/* Header section */}
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
-            Notre Travail en Action
+            Our Work in Action
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Découvrez l&apos;art du barbier en vidéo dans nos deux salons de Cairns
+            Discover the art of barbering in our two Cairns locations
           </p>
         </div>
 

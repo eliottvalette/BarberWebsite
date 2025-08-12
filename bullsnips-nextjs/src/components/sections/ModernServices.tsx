@@ -20,14 +20,14 @@ const ModernServices = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light tracking-tight text-gray-900 sm:text-5xl">
-            Services & Tarifs
+            Services & Pricing
           </h2>
           <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">
             <span>Bungalow</span>
             <span className="text-gray-300">•</span>
             <span>Smithfield</span>
             <span className="text-gray-300">•</span>
-            <span>Depuis 1995</span>
+            <span>Since 1995</span>
           </div>
         </div>
 
@@ -78,16 +78,16 @@ const ModernServices = () => {
         {/* Bottom Info */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <p className="text-sm font-medium text-gray-900 mb-1">Consultation incluse</p>
-            <p className="text-xs text-gray-500">Personnalisée pour chaque client</p>
+            <p className="text-sm font-medium text-gray-900 mb-1">Consultation Included</p>
+            <p className="text-xs text-gray-500">Personalized for each client</p>
           </div>
           <div>
             <p className="text-sm font-medium text-gray-900 mb-1">Happy Hour</p>
-            <p className="text-xs text-gray-500">Bière offerte • Jeu & Ven après 15h</p>
+            <p className="text-xs text-gray-500">Free beer • Thu & Fri after 3pm</p>
           </div>
           <div>
-            <p className="text-sm font-medium text-gray-900 mb-1">Sur rendez-vous</p>
-            <p className="text-xs text-gray-500">Walk-ins bienvenus selon dispo</p>
+            <p className="text-sm font-medium text-gray-900 mb-1">Walk-ins Only</p>
+            <p className="text-xs text-gray-500">No appointments • Walk-ins welcome</p>
           </div>
         </div>
 

@@ -13,11 +13,11 @@ const BookingCTA = () => {
             {/* Left: copy */}
             <div className="lg:col-span-7 text-neutral-900">
               <h2 className="text-balance text-4xl font-light sm:text-5xl lg:text-6xl">
-                Prêt pour votre <span className="font-normal text-red-600">meilleur look</span> ?
+                Ready for your <span className="font-normal text-red-600">best look</span>?
               </h2>
               <p className="mt-6 max-w-xl text-pretty text-base text-neutral-700">
-                Réservez votre rendez-vous aujourd&apos;hui et découvrez l&apos;expérience Bullsnips. 
-                Deux salons à Cairns pour vous servir avec excellence depuis 1995.
+                Walk in today and discover the Bullsnips experience. 
+                Two shops in Cairns serving you with excellence since 1995.
               </p>
 
               <div className="mt-10 flex flex-col items-center justify-start gap-3 sm:flex-row lg:justify-start">
@@ -28,7 +28,7 @@ const BookingCTA = () => {
                 >
                   <Link href="#contact" className="flex items-center gap-2">
                     <Calendar className="h-4 w-4" />
-                    <span>Réserver en ligne</span>
+                    <span>Walk in Today</span>
                     <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </Button>
@@ -40,7 +40,7 @@ const BookingCTA = () => {
                 >
                   <Link href="tel:+61740516344" className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <span>Appeler maintenant</span>
+                    <span>Call Now</span>
                     <ArrowUpRight className="h-4 w-4 text-red-600 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </Button>
@@ -51,12 +51,12 @@ const BookingCTA = () => {
                 <div className="rounded-lg border border-black/5 bg-white/60 p-4">
                   <div className="text-sm font-medium text-neutral-900">Bungalow</div>
                   <div className="text-xs text-neutral-600 mt-1">3/156-158 Aumuller St</div>
-                  <div className="text-xs text-neutral-500 mt-1">Lun-Ven: 8:30-17h • Sam: 8-12:30h</div>
+                  <div className="text-xs text-neutral-500 mt-1">Mon-Fri: 8:30am-5pm • Sat: 8am-12:30pm</div>
                 </div>
                 <div className="rounded-lg border border-black/5 bg-white/60 p-4">
                   <div className="text-sm font-medium text-neutral-900">Smithfield</div>
                   <div className="text-xs text-neutral-600 mt-1">Campus Shopping Village</div>
-                  <div className="text-xs text-neutral-500 mt-1">Lun-Ven: 8:30-17h • Sam: 8-12:30h</div>
+                  <div className="text-xs text-neutral-500 mt-1">Mon-Fri: 8:30am-5pm • Sat: 8am-12:30pm</div>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const BookingCTA = () => {
               <div className="overflow-hidden rounded-xl border border-black/5 bg-white shadow-sm">
                 <Image
                   src="/assets/barber.jpg"
-                  alt="Salon Bullsnips"
+                  alt="Bullsnips Barbershop"
                   width={800}
                   height={600}
                   className="h-[360px] w-full object-cover"
@@ -81,8 +81,8 @@ const BookingCTA = () => {
                 </div>
                 <div>
                   <div className="text-sm font-medium text-neutral-900">Happy Hour !</div>
-                  <div className="text-xs text-neutral-600">Bière ou whiskey offert après 15h</div>
-                  <div className="text-xs text-neutral-500 mt-0.5">Jeudi & Vendredi</div>
+                  <div className="text-xs text-neutral-600">Free beer or whiskey after 3pm</div>
+                  <div className="text-xs text-neutral-500 mt-0.5">Thursday & Friday</div>
                 </div>
               </div>
             </div>

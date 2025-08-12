@@ -7,21 +7,21 @@ const Testimonials = () => {
     {
       name: 'Marcus Thompson',
       location: 'Cairns CBD',
-      text: 'Le meilleur barbershop de Cairns ! L&apos;attention aux détails est incroyable.',
+      text: 'Best barbershop in Cairns! The attention to detail is incredible.',
       service: 'Fade & Barbe',
       rating: 5
     },
     {
       name: 'David Chen', 
       location: 'Smithfield',
-      text: 'Service professionnel à chaque fois. Le rasage traditionnel est une expérience unique.',
+      text: 'Professional service every time. The traditional shave is a unique experience.',
       service: 'Rasage Classique',
       rating: 5
     },
     {
       name: 'Jake Wilson',
       location: 'Bungalow', 
-      text: 'Techniques modernes avec hospitalité old-school. L&apos;équipe connaît vraiment son art.',
+      text: 'Modern techniques with old-school hospitality. The team truly knows their craft.',
       service: 'Coupe Premium',
       rating: 5
     }
@@ -38,7 +38,7 @@ const Testimonials = () => {
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
-            Ce que disent nos clients
+            What Our Clients Say
           </h2>
         </div>
 

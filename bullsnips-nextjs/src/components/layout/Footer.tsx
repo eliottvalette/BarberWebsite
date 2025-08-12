@@ -15,7 +15,7 @@ const Footer = () => {
     
     if (!videoForward || !videoReverse) return
 
-    // Précharger la vidéo inversée
+    // Preload reverse video
     videoReverse.load()
 
     const handleForwardEnded = () => {
@@ -35,7 +35,7 @@ const Footer = () => {
     videoForward.addEventListener('ended', handleForwardEnded)
     videoReverse.addEventListener('ended', handleReverseEnded)
 
-    // Initialiser l'état
+    // Initialize state
     videoReverse.style.display = 'none'
     
     return () => {
